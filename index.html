@@ -3,8 +3,11 @@
 
 <head>
     <title>Exploring the Web</title>
-    <link href="..\demopage\bootstrap\css\bootstrap.min.css" rel="stylesheet" />
-    <script src="..\demopage\bootstrap\js\bootstrap.min.js"></script>
+    <link href="../demopage\bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../demopage\bootstrap/js/bootstrap.min.js"></script>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="../jquery-ui.min.js"></script>
+    <script src="../demopage/popper.min.js"></script>
     <style>
         #top-menu {
             width: auto;
@@ -14,10 +17,14 @@
             margin-right: 5%;
         }
         
-        div {
+        li {
             margin-left: 3%;
             margin-right: 3%;
             /*background-color: cornsilk;*/
+        }
+        
+        ul {
+            list-style: none;
         }
         
         #menu-list {
@@ -27,15 +34,16 @@
 </head>
 
 <body>
-    <div id="top-menu">
+
+    <ul id="top-menu" class="">
         <!--<strong>This container is for menu</strong>-->
-        <div id="menu-list">
-            <div>Home</div>
-            <div>Services</div>
-            <div>Blog</div>
-            <div>Contact</div>
-        </div>
-    </div>
+        <li id="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </li>
+    </ul>
     <h3>Getting Started</h3>
     <p>This website offers a great resource for all consumable web related information.</p>
     <div>
